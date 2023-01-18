@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Form</title>
+</head>
+
+<body>
+    <form>
+        <h1>Blood Donation Form</h1>
+        <p>Confidential - Please answer the following questions correctly. This will help to protect you and the patient
+            who receives your blood. </p>
+        <table cellpadding="10">
+            <tr>
+                <td>
+                    First Name :
+                </td>
+                <td>
+                    <input type="text" name="txtFirstname"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last Name :
+                </td>
+                <td>
+                    <input type="text" name="txtLastName"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email id :
+                </td>
+                <td>
+                    <input type="email" name="txtEmail"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mobile No :
+                </td>
+                <td>
+                    <input type="number" name="numPhone" placeholder="Mobile Number">
+                    <input type="number" name="numPhone" placeholder="Alternate Mobile Number"><br><br>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    Gender :
+                </td>
+                <td>
+                    <input type="radio" name="rdGender" value="Male">Male
+                    <input type="radio" name="rdGender" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Birth Date :
+                </td>
+                <td>
+                    <input type="datetime-local" name="dateBirth placeholder=" Birth Date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address :
+                </td>
+                <td>
+                    <input type="text" name="txtAddress" placeholder="Street Address line 1">
+                    <input type="text" name="txtAddress2" placeholder="Street Address line 2"><br><br>
+                    <input type="text" name="txtCity" placeholder="City"><br><br>
+                    <input type="text" name="txtState" placeholder="State"><br><br>
+                    <input type="text" name="txtPincode" placeholder="Pincode"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Weight :
+                    <input type="num" name="numWeight" placeholder="Weight">
+                </td>
+                <td>
+                    Pulse :
+                    <input type="num" name="numPulse" placeholder="Pulse">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hb :
+                    <input type="num" name="numHb" placeholder="Hb">
+                </td>
+                <td>
+                    BP :
+                    <input type="num" name="numBP" placeholder="BP">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Have you donated previously :
+
+                </td>
+                <td>
+                    <input type="radio" name="rdDonated" value="Male">Yes
+                    <input type="radio" name="rdDonated" value="Female">No
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Do you suffer from or have suffered from any of the following diseases?<br><br>
+
+                <td>
+                    <input type="checkbox" name="chkavailable">Heart Disease<br>
+                    <input type="checkbox" name="chkavailable">Diabetes<br>
+                    <input type="checkbox" name="chkavailable">Sexually Transmitted disease<br>
+                    <input type="checkbox" name="chkavailable">Lung Disease<br>
+                    <input type="checkbox" name="chkavailable">Cancer<br>
+                    <input type="checkbox" name="chkavailable">Malaria<br>
+                    <input type="checkbox" name="chkavailable">Jaundice<br>
+                    <input type="checkbox" name="chkavailable">Epilepsy<br>
+                </td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Are you taking or have you taken any of these in the past 72 hours?
+                </td>
+
+                <td>
+                    <input type="checkbox" name="chkavailable">Antibiotics<br>
+                    <input type="checkbox" name="chkavailable">Steroids<br>
+                    <input type="checkbox" name="chkavailable">Aspirin<br>
+                    <input type="checkbox" name="chkavailable">Vaccinations<br>
+                    <input type="checkbox" name="chkavailable">Alcohol<br>
+                </td>
+            </tr>
+            <tr align="right">
+                <td>
+                    <input type="Submit">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>

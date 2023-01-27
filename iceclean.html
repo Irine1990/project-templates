@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>ICE CUBE</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            font-family: 'Overpass', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+        }
+
+        li {
+            ;
+            display: inline-block;
+            color: white;
+            padding-right: 50px;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            background-color: rgb(51, 120, 230);
+            display: flex;
+            justify-content: center;
+        }
+
+        .row4 {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 0%;
+            margin-top: 0%;
+        }
+
+        .row5 {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .child1 {
+            width: 24%;
+            height: 200px;
+            background-color: rgb(227, 225, 225);
+
+        }
+
+        .child2 {
+            width: 25%;
+            height: 200px;
+            background-color: white;
+        }
+
+        .child3 {
+            width: 25%;
+            height: 200px;
+            background-color: rgb(227, 225, 225);
+        }
+
+        .child4 {
+            width: 25%;
+            height: 200px;
+            background-color: white;
+        }
+
+        h3 {
+            text-align: center;
+            color: rgb(0, 98, 255);
+
+        }
+
+        .child5 {
+            background-color: rgb(0, 98, 255);
+            width: 100%;
+            margin: 100px;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+
+        .row6 {
+
+            padding: 0%;
+            display: flex;
+            margin: 0 150px 0 190px;
+            flex-wrap: wrap;
+
+        }
+
+        .row7 {
+            display: flex;
+            flex-direction: row;
+            margin: 0 150px 0 300px;
+            flex-wrap: wrap;
+
+        }
+
+        .row7 img {
+            border-style: groove;
+        }
+
+        .child6 {
+            margin-top: -80px;
+            margin-right: 60px;
+
+        }
+
+        .child7 {
+            margin-top: -80px;
+            margin-right: 80px;
+
+        }
+
+        .child8 {
+            margin-top: -80px;
+            margin-right: 80px;
+
+        }
+
+        .child9 {
+            margin-top: -80px;
+            margin-right: 80px;
+
+
+        }
+
+        .row8 {
+            display: flex;
+            flex-direction: row;
+            margin: 0 150px 0 300px;
+            padding: 0;
+        }
+
+        .child10 {
+            margin-top: 0px;
+            margin-right: 80px;
+        }
+
+        .child11 {
+            margin-top: 0px;
+            margin-right: 80px;
+        }
+
+        .child12 {
+            margin-top: 0px;
+            margin-right: 80px;
+        }
+
+        .child13 {
+            margin-top: 0px;
+            margin-right: 80px;
+        }
+
+        .row8 img {
+            border-style: groove;
+        }
+
+        .row9 {
+            padding: 0%;
+            display: flex;
+            margin: 0 150px 0 190px;
+            margin-top: -90px;
+        }
+
+        .child14 {
+            background-color: rgb(0, 98, 255);
+            color: white;
+            width: 100%;
+            margin: 100px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .row10 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            margin: 0 300px 0 290px;
+            margin-top: -100px;
+            flex-wrap: wrap;
+
+        }
+
+        .child15 {
+            width: 24%;
+            height: 340px;
+            margin: 0;
+
+
+        }
+
+        .child16 {
+            width: 24%;
+            height: 340px;
+            background-color: black;
+            color: white;
+            text-align: left;
+            margin-top: 18px;
+        }
+
+        .child17 {
+            margin-top: 20px;
+            height: 380px;
+
+
+        }
+
+        h3 {
+
+            padding: 4%;
+            color: rgb(0, 98, 255);
+            width: 380px;
+        }
+
+        .child18 {
+            background-color: rgb(0, 98, 255);
+            padding: 40px;
+            font-size: 40px;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .row1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: rgb(51, 120, 230);
+            ;
+            padding: 10px;
+        }
+
+        .head1 {
+            margin-left: 180px;
+            color: white;
+        }
+
+        .head2 {
+            margin-left: 150px;
+
+            color: white;
+        }
+
+        .row2 {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(0, 98, 255);
+            justify-content: space-between;
+            padding: 40px;
+        }
+
+        .row11 {
+            display: inline-flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding-left: 40px;
+            color: rgb(0, 98, 255);
+            margin: 0, -30px, 0, 30px;
+            justify-content: space-around;
+
+        }
+
+
+        .child19 {
+            margin-right: 30px;
+        }
+
+        .child20 {
+            margin-left: 150px;
+        }
+
+        .child21 {
+            margin-left: 150px;
+        }
+
+        .child22 {
+            margin-left: 150px;
+        }
+
+        .head3 {
+            margin-left: 60px;
+        }
+
+        .head4 {
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            width: 20%;
+            height: 20px;
+        }
+
+        .child18 input[type=text] {
+            padding: 5px;
+            font-size: 30px;
+            margin-top: 20px;
+
+        }
+
+        .head4 input[type=text] {
+            padding: 18px;
+            width: 300px;
+            margin-bottom: 10px;
+            margin-top: -90px;
+
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="row1" width="100%">
+        <div class="head1">
+
+            <strong>iceclean@iceclean.ie</strong>
+        </div>
+        <div class="head2">
+            78907897678
+        </div>
+    </div>
+    <div class="row2">
+        <div class="head3">
+            <img src="D:\crampete training\Images\ice logo.png">
+        </div>
+        <div class="head4">
+            <input type="text" placeholder="Search.." name="search">
+        </div>
+    </div>
+    <div class="row">
+        <nav>
+            <ul>
+                <li><strong>PRODUCTS</strong></li>
+                <li><strong>INDUSTRY SECTORS</strong></li>
+                <li><strong>SPARE PARTS</strong></li>
+                <li><strong>SUPPLIES</strong></li>
+                <li><Strong>FAQS</Strong></li>
+                <li><strong>ABOUT</strong></li>
+                <li><strong>CONTACT</strong></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="image1">
+        <img src="D:\crampete training\Images\ice 1.jpg" width="100%">
+    </div>
+    <div class="row4">
+        <div>
+            <img src="D:\crampete training\Images\ice 2.jpg" width="24%" height="400px">
+            <img src="D:\crampete training\Images\ice 3.jpg" width="25%" height="400px">
+            <img src="D:\crampete training\Images\ice 4.jpg" width="25%" height="400px">
+            <img src="D:\crampete training\Images\ice 5.jpg" width="25%" height="400px">
+        </div>
+    </div>
+    <div class="row5">
+        <div class="child1">
+            <h3><strong>HIRE</strong></h3>
+            <p align="center">
+                Why Buy when you can hire- ICECLEAN offers a comphrehensive range of industrial cleaning equipment
+                to
+                cater for your needs on short or long term hire
+            </p>
+        </div>
+        <div class="child2">
+            <h3><strong>SALES</strong></h3>
+            <p align="center">
+                Why Buy when you can hire- ICECLEAN offers a comphrehensive range of industrial cleaning equipment
+                to
+                cater for your needs on short or long term hire
+            </p>
+        </div>
+        <div class="child3">
+            <h3><strong>SERVICES</strong></h3>
+            <p align="center">
+                Why Buy when you can hire- ICECLEAN offers a comphrehensive range of industrial cleaning equipment
+                to
+                cater for your needs on short or long term hire
+            </p>
+        </div>
+        <div class="child4">
+            <h3><strong>SPARE PARTS</strong></h3>
+            <p align="center">
+                Why Buy when you can hire- ICECLEAN offers a comphrehensive range of industrial cleaning equipment
+                to
+                cater for your needs on short or long term hire
+            </p>
+        </div>
+    </div>
+
+    <div class="row6">
+        <div class="child5">
+            <strong> BEST SELLERS</strong>
+        </div>
+    </div>
+    <div class="row7">
+        <div class="child6">
+            <img src="D:\crampete training\Images\ice 7.jpg">
+            <h4 class="label1">GENIEE</h4>
+        </div>
+        <div class="child7">
+            <img src="D:\crampete training\Images\ice 7.jpg">
+            <h4 class="label1">MAGNA</h4>
+        </div>
+        <div class="child8">
+            <img src="D:\crampete training\Images\ice 8.jpg">
+            <h4 class="label1">ORBIS ECO 400</h4>
+        </div>
+        <div class="child9">
+            <img src="D:\crampete training\Images\ice 9.jpg">
+            <h4 class="label1">Multiwash MW 340</h4>
+        </div>
+
+    </div>
+    <div class="row8">
+        <div class="child10">
+            <img src="D:\crampete training\Images\ice10.jpg">
+            <h4 class="label1">FV9 BACK VAC 220V </h4>
+        </div>
+        <div class="child11">
+            <img src="D:\crampete training\Images\ice 11.jpg"">
+            <h4 class=" label1">LSU 375 WET VAC</h4>
+        </div>
+        <div class="child12">
+            <img src="D:\crampete training\Images\ice 12.jpg">
+            <h4 class="label1">STEAM AND VAC PRO</h4>
+        </div>
+        <div class="child13">
+            <img src="D:\crampete training\Images\ice 12.jpg">
+            <h4 class="label1">POLARIS 800</h4>
+        </div>
+    </div>
+    <div class="row9">
+        <div class="child14">
+            <strong>SELECT YOUR INDUSTRY</strong>
+        </div>
+    </div>
+    <div class="row10">
+        <div class="child15">
+            <h3>Healthcare</h3>
+            <ul>
+                <ol> Bakery & Food Manufacturing Construction</ol><br>
+                <ol>Facilities Management & Contract Cleaners</ol><br>
+                <ol>Education</ol><br>
+                <ol>Retail</ol><br>
+                <ol>Government & Local Authorities</ol><br>
+                <ol>Industry & Manufacturing</ol><br>
+                <ol>Warehouse & Distribution</ol><br>
+                <ol>Hospitality</ol><br>
+
+            </ul>
+        </div>
+        <div class="child16">
+            <p align="center">Ice Clean Ltd is a leading office and commercial and residential cleaning company that
+                strives to
+                meet
+                all your cleaning needs. Our team has a wealth of experience gained over several years in cleaning
+                and
+                related service."</p><br><br>
+            <p>Regular cleaning of parts is paraamount to not only ensure your building complies but also to give you
+                comfort.
+            <ul color="white">
+                <ol>
+                    Safe and clean floor
+                </ol>
+                <ol>
+                    Hygeiene environment
+                </ol>
+                <ol>Cost effective and clean</ol>
+            </ul>
+            </p>
+
+        </div>
+        <div class="child17">
+            <img src="D:\crampete training\Images\nurse.jpg">
+        </div>
+    </div>
+    <div class="child18">
+        <p align="center">
+            IRELAND'S LEADING MACHINE<br>
+            CLEANING COMPANY<br>
+            <input type="text" name="About Iceclean" placeholder="About Iceclean"> <input type="text"
+                name="Order Machine Demo" placeholder="Order Machine Demo">
+        </p>
+    </div>
+    <div class="row11">
+        <div cladd="child19">
+            <h2><strong>CONTACT US</strong></h2>
+            <p><strong>ICE- Industrial Cleaning<br> Equipment<br>
+                    Unit 5 Western Bussiness Park<br>
+                    Ook close - Dublin 12</strong></p>
+            <p>
+                <strong> +353(0)45678890</strong>
+            </p>
+            <p>
+                <strong>sales@iceclean.ie</strong>
+            </p>
+        </div>
+        <div class="child20">
+            <h2>CUSTOMER SUPPORT</h2>
+            <p><strong>Orders and Return</strong></p>
+            <p><strong>View Cart</strong></p>
+            <p><strong>Login</strong></p>
+            <p><strong>SiteMap</strong></p>
+            <p><strong>Terms & Conditions</strong></p>
+            <p><strong>Cookies</strong></p>
+        </div>
+        <div class="child21">
+            <h2>Our Links</h2>
+            <p><strong>Products</strong></p>
+            <p><strong>Industry Sectors</strong></p>
+            <p><strong>Spare Parts</strong></p>
+            <p><strong>Cleaning Supplies</strong></p>
+            <p><strong>FAQS</strong></p>
+            <p><strong>About</strong></p>
+            <p><strong>Contact</strong></p>
+        </div>
+        <div class="child22">
+            <img src="D:\crampete training\Images\ice logo.png">
+            <p><strong>Our Team is here to help you to clear<br> and save your time and money and we acheive this by<br>
+                    understanding
+                    your cleaning principles<br> and provide you with most<br> cost effective and effective
+                    services</strong></p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
